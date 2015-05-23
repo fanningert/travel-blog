@@ -1,0 +1,10 @@
+.DS_Store
+/accounts/**
+/avatars/**
+/thumbs/**
+/cache/**
+/content/**
+!/content/error/**
+!/content/home/**
+!/content/site.txt
+/assets/.sass-cache
