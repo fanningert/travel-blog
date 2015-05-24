@@ -34,4 +34,20 @@ of the system, please check out http://getkirby.com/docs/advanced/options
  */
 c::set('place.defaults.lat', 45.5230622);
 c::set('place.defaults.lng', -122.67648159999999);
-c::set('place.defaults.zoom', 9);
+c::set('place.defaults.zoom', 14);
+
+/*
+ * Kirby extension: ImageExt
+ */
+c::set('kirby.extension.imageext.support.tag.image', true);
+c::set('kirby.extension.imageext.support.tag.image_gallery', true);
+
+c::set('kirbytext.image.caption_field', 'caption');
+c::set('kirby.extension.imageext.gallery.link.class', 'strip');
+c::set('kirby.extension.imageext.gallery.link.attr', 'data-strip-group');
+
+/*
+ * Kriby extension: GoogleMaps
+ */
+c::set('kirby.extension.gmaps.class', 'googlemaps');
+c::set('kirby.extension.gmaps.zoom', 12);

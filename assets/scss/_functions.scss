@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+@function rem-px($values, $base-size: $base-font-size){ /* 3 */
+
+
+    $list: (); /* 4 */
+
+
+    @each $value in $values { /* 5 */
+        
+        @if (type-of($value) == "number") and ($value != 0) { /* 6 */
+
+
+            $unit : unit($value);     /* 7 */
+            $val  : strip-units($value); /* 2 */
+
+
+            @if ($px-only) and ($unit == 'rem') { /* 8 */
+                $list: append($list, ($val * $base-size) + px); /* 8 */
+            }
+
+
+            @else if($unit == 'px') or ($unit == 'rem'){ /* 9 */
+                $list: append($list, $value); /* 9 */
+            }
+
+
+            @else {
+                @warn 'There is no unit conversion for "#{$unit}"'; /* 10 */
+            }
+
+
+        }@else {
+            $list: append($list, $value); /* 11 */
+        }
+
+
+    }
+
+
+    @return $list(); /* 12 */
+
+
+}

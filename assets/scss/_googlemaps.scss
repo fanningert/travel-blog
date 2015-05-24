@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+.googlemaps {
+  height: 300px;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-width(1px);
+  @include border-color(color("grey", "lighten-2"));
+  @include border-style(solid);
+}
+
+.googlemaps-square {
+  width: 300px;
+  height: 300px;
+}

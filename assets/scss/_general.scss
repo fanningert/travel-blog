@@ -1,0 +1,144 @@
+@CHARSET "UTF-8";
+
+/*
+ * Body
+ */
+body, html {
+  color: #846C63;
+  margin: 0px;
+}
+
+body {
+  background-color: #F6F4F1;
+}
+
+/*
+ * Hyperlinks
+ */
+a {
+	color: color("light-blue", "lighten-1");
+	@include word-wrap();
+}
+
+a:hover {
+	color: color("light-blue", "darken-4");
+}
+
+/*
+ * Code
+ */
+code,
+kbd,
+tt, 
+var,
+samp, 
+pre {
+  font-family: $monospace;
+  background-color: color("grey", "lighten-4");
+}
+
+pre code {
+/*   margin-bottom: 0px; */
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+	
+/* 	margin-bottom: 14px; */
+  padding: 10px;
+
+  border: 1px solid color("grey", "lighten-2");
+	@include border-top-radius(2px);
+	@include border-right-radius(2px);
+	@include border-bottom-radius(2px);
+	@include border-left-radius(2px);
+}
+
+pre.code {
+/* 	box-shadow($args); */
+  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 2px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em, 
+i, 
+dfn {
+  font-style: italic;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted;
+}
+address {
+	margin: 0px 0px ($base-font-size + 7px) ($base-font-size + 7px);
+	margin: rem(0px) rem(0px) rem(($base-font-size + 7px)) rem(($base-font-size + 7px));
+  font-style:italic;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+pre {
+  white-space:pre;
+}
+
+blockquote {
+	margin: 0 0 0.75em;
+  padding-left: rem-px(1.5rem);
+  padding-left: 1.5rem;
+  border-left: 5px solid color("materialize-red", "lighten-3");
+}
+
+cite {
+  font-style: italic;
+}
+
+hr {
+	height: 0px;
+	border-width: 0px;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: color("grey", "lighten-2");
+  margin: 10px 0px;
+  margin: rem(10px) 0rem;
+}
+
+.responsive-image {
+	width: 100%;
+	max-width:100%;
+  height:auto;	
+}
+
+.table-profexp-company {
+	background-color: color("grey", "lighten-4");
+}
+
+table tbody th {
+	width: 150px;
+}
+
+/*
+ * Font Awesome Extension
+ */
+.fa-stack {
+  color: inherit !important;
+  vertical-align: top !important;
+  margin-left: -3px !important;
+}
+
+.filetype-text {
+  color: white !important; 
+  font-size: .8em !important;
+  font-weight: bold !important;
+}
+
+video {
+  width: 100% !important;
+  height: auto !important;
+}

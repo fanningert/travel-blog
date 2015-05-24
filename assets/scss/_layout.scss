@@ -1,0 +1,285 @@
+@CHARSET "UTF-8";
+
+#page-header {
+	background-color: color("light-blue", "lighten-1");
+	margin-bottom: $base-font-size+px;
+	margin-bottom: rem($base-font-size);
+	
+	@extend .z-depth-1;
+	
+	a {
+	  color: color("shades", "white");
+	}
+	
+	a:hover {
+    color: color("shades", "white");
+  }
+	
+	nav {
+	  @include outer-container;
+	  
+	  .nav-wrapper {
+	    @extend .center-on-medium-and-down;
+	    
+	      
+	    #menu-toggle {
+        display: none;
+        
+        &:checked + label + a + ul + ul {
+          display: none;
+        }
+	    }
+	    
+		  .brand-logo {
+		    display: inline-block;
+		    padding: 0px;
+		    font-size: rem-px(2.5rem);
+		    font-size: 2.5rem;
+		  }
+		  
+		  ul.nav-deskop {
+		    padding: 0px;
+		    margin: 0px;
+		    
+        @include border-width(0px 1px 0px 0px);
+        @include border-color(color("light-blue", "lighten-2"));
+        @include border-style(solid);
+		    
+		    @media #{$medium-and-up} {
+		      line-height: 64px;
+		    }
+		    
+		    li {
+		      list-style-type: none;
+		      float: left;
+		      @include transition(background-color 0.3s);
+		        
+		      @include border-width(0px 0px 0px 1px);
+				  @include border-color(color("light-blue", "lighten-2"));
+				  @include border-style(solid);
+						        
+		      a {
+		        font-size: rem-px(1rem);
+		        font-size: 1rem;
+		        display: block;
+		        padding: 0px 15px;
+		        padding: 0rem rem(15px);
+		        
+		        &.active,
+		        &:active,
+		        &:hover {
+		          background-color: rgba(0, 0, 0, 0.0980392);
+		        }
+		        
+		      }   
+		    }
+		  }
+		  
+		  ul.nav-mobil {
+        padding: 0px;
+        margin: 0px;
+       
+        @include border-width(1px 0px 0px 0px);
+        @include border-color(color("light-blue", "lighten-2"));
+        @include border-style(solid);
+       
+        li {
+          list-style-type: none;
+           
+          a {
+            display: block;
+            padding: 5px;
+            padding: rem(15px);
+             
+            &.active,
+            &:active,
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.0980392);
+            }
+      
+          }
+        }
+      }
+
+		  
+		  .button-collapse {
+/* 		    float: left; */
+/* 			  position: relative; */
+/* 			  z-index: 1; */
+/* 			  height: 56px; */
+        color: color("shades", "white");
+        margin-left: rem-px(1rem);
+        margin-left: 1rem;
+        margin-top: rem-px(1rem);
+        margin-top: 1rem;
+		  }
+		  
+    }
+	}
+}
+
+#page-content {
+	@include outer-container;
+	
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-width(1px);
+	@include border-color(color("grey", "lighten-2"));
+	@include border-style(solid);
+	background-color: color("shades", "white");
+	@include padding(5px);
+	
+	@extend .z-depth-1;
+	
+	@media #{$medium-and-down} {
+    @include border-top-radius(0px);
+    @include border-bottom-radius(0px);
+  }
+	
+	article {
+	  .article-header {
+	    .article-header-image {
+	      position: relative;
+/* 	      overflow: hidden; */
+/* 	      height: 300px; */
+	      
+	      img {
+	        @include border-top-radius(5px);
+          @include border-bottom-radius(5px);
+				  @include border-width(1px);
+				  @include border-color(color("grey", "lighten-2"));
+				  @include border-style(solid);
+	        @extend .responsive-image;
+        }
+        
+        .article-header-title {
+          width: 100%;
+          @include position(absolute, null null 0px 0px);
+          padding: rem-px(1rem, ($em-base + 1));
+          padding: 1rem;
+					text-shadow: 0 0 5px black;
+					color: #fff;
+					
+					@media #{$medium-and-down} {
+            padding: rem-px(0.75rem, ($em-base + 0.5));
+            padding: 0.75rem;
+          }
+					
+					@media #{$small-and-down} {
+	          padding: rem-px(0.5rem, $em-base);
+	          padding: 0.5rem;
+          }
+        }
+	    }
+	    
+	    .article-header-title-text {
+			  margin: rem-px(0.5rem) 0px rem-px(0.5rem) 0px;
+			  margin: 0.5rem 0rem 0.5rem 0rem;
+	    }
+	    
+	    .article-header-title-date {
+/* 	      font-size: rem-px($article-header-title-date-font-size); */
+/* 	      font-size: $article-header-title-date-font-size; */
+/* 			  line-height: rem-px(1.1*$article-header-title-date-font-size); */
+/* 			  line-height: 1.1*$article-header-title-date-font-size; */
+/* 			  margin: rem-px(($article-header-title-date-font-size / 2)) 0px rem-px(($article-header-title-date-font-size / 2.5)) 0px; */
+/* 			  margin: ($article-header-title-date-font-size / 2) 0rem ($article-header-title-date-font-size / 2.5) 0rem; */
+	    }
+	  }
+	  
+	  .article-content {
+	    img.responsive-image {
+        @extend .responsive-image;
+      }
+	  }
+	  
+	  .article-footer {
+	     
+	  }
+	}
+	
+  nav {
+    @extend .center;
+  
+	  ul {
+	    margin: 0px;
+	    padding: 0px;
+	    list-style: none;
+	  
+	    li {
+	      padding-left: rem-px(0.5rem);
+	      padding-left: 0.5rem;
+	    
+	      float: left;
+	      
+	      .nav-button {
+	        display: block;
+          min-width: rem-px(2rem);
+          min-width: 2rem;
+          padding: rem-px(0.5rem);
+          padding: 0.5rem;
+          
+          @include no-wrap();
+	      }
+	      
+	      .nav-button:hover {
+          @extend .z-depth-1;
+        }
+        
+        .nav-button-deactive {
+          color: color("shades", "white");
+          background-color: color("grey", "base");
+          @include border-top-radius(5px);
+          @include border-bottom-radius(5px);
+        }
+        
+        .nav-button-active {
+          color: color("shades", "white");
+          background-color: color("light-blue", "base");
+          @include border-top-radius(5px);
+          @include border-bottom-radius(5px);
+        }
+        
+        .nav-button-current {
+          color: color("shades", "white");
+          background-color: color("light-blue", "darken-3");
+          @include border-top-radius(5px);
+          @include border-bottom-radius(5px);
+        }
+	      
+	    }
+	    
+	    &:after {
+        @extend .clearfix-custom;
+      }
+	  }
+	  
+	  &:after {
+	    @extend .clearfix-custom;
+	  }
+	}
+}
+
+#page-footer {
+	background-color: color("materialize-red", "lighten-2");
+  margin-top: $base-font-size+px;
+  margin-top: rem($base-font-size);
+  
+  padding: 0.75em 0 0.75em;
+  
+  p {
+    margin: 0px;
+  }
+  
+  a {
+    color: color("shades", "white");
+  }
+  
+  a:hover {
+    color: color("shades", "white");
+  }
+  
+  >div {
+    @include outer-container;
+  }
+}

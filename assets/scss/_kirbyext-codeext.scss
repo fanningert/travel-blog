@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+figure {
+  &.code-figure {
+    margin-right: 0px;
+    box-shadow: none;
+  
+    pre {
+      border-radius: 0px;
+      border-width: 0px;
+      margin: 0px;
+      box-shadow: none;
+    }
+  }
+}

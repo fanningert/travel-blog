@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+@media print {
+	.show-only-on-print {
+		display: inline-block;
+	}
+	
+	.hide-on-print {
+    display: none;
+  }
+	
+	#page-content {
+	  @include border-width(0px);
+	  box-shadow: none;
+	}
+}

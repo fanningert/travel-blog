@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+
+/*
+ * Alerts
+ */
+.alert {
+  @extend .z-depth-1;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: $base-font-size;
+  margin-bottom: rem($base-font-size);
+  padding: 15px;
+  padding: rem(15px);
+  
+  p {
+    margin: 0px;
+  }
+  
+  &.alert-info {
+    color: color("light-blue", "darken-4");
+    border-color: color("light-blue", "base");
+    background-color: color("light-blue", "lighten-4");
+  }
+  
+  &.alert-success {
+    color: color("light-green", "darken-4");
+    border-color: color("light-green", "base");
+    background-color: color("light-green", "lighten-4");
+  }
+  
+  &.alert-warning {
+    color: color("amber", "darken-4");
+    border-color: color("amber", "base");
+    background-color: color("amber", "lighten-4");
+  }
+  
+  &.alert-error {
+    color: color("red", "darken-4");
+    border-color: color("red", "base");
+    background-color: color("red", "lighten-4");
+  }
+  
+  &.alert-validation {
+    color: color("orange", "darken-4");
+    border-color: color("orange", "base");
+    background-color: color("orange", "lighten-4");
+  }
+}
+
+figure {
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: color("shades", "white");
+  @extend .z-depth-1;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: color("grey", "lighten-2");
+  
+  figcaption {
+    color: color("grey", "darken-4");
+/*     @include color($color-grey-900, $dark-color-alpha54); */
+    margin-bottom: 0px;
+    padding: 4px;
+    padding: rem(4px);
+    
+    p {
+      margin: 0px;
+    }
+    
+    &.figcaption-top {
+      
+    }
+    
+    &.figcaption-bottom {
+      
+    }
+  }
+}

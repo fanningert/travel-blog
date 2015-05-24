@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+@mixin box-shadow-2($args1, $args2) {
+    -webkit-box-shadow: $args1, $args2;
+    -moz-box-shadow: $args1, $args2;
+    box-shadow: $args1, $args2;
+}
+
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+@mixin no-wrap() {
+  white-space: normal;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal;
+}

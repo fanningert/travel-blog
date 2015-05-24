@@ -2,5 +2,69 @@
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="f6bfd62d-fa02-4764-b6d8-be63f42d2753" kpf_version="5" name="travel-blog.komodoproject">
 <preference-set idref="f6bfd62d-fa02-4764-b6d8-be63f42d2753" id="project" preftype="project">
+<preference-set id="Invocations">
+<preference-set id="Project">
+  <string id="cookieparams"></string>
+  <string relative="path" id="cwd"></string>
+  <string id="documentRoot"></string>
+  <string id="executable-params"></string>
+  <string relative="path" id="filename">panel/index.php</string>
+  <string id="getparams"></string>
+  <string id="language">PHP</string>
+  <string id="mpostparams"></string>
+  <string id="params"></string>
+  <string id="postparams"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="request-method">GET</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="sim-cgi">0</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="userCGIEnvironment"></string>
+  <string id="userEnvironment"></string>
+</preference-set>
+</preference-set>
+  <long id="caretStyle">1</long>
+  <long id="caretWidth">1</long>
+  <boolean id="checkDiskFile">1</boolean>
+  <boolean id="checkNetworkDiskFile">1</boolean>
+  <string id="currentInvocationLanguage">PHP</string>
+  <string id="donotask_action_close_deleted_files"></string>
+  <string id="donotask_action_dragdrop_uri"></string>
+  <string id="donotask_action_reload_changed_files"></string>
+  <boolean id="donotask_buffer_conflicts_with_file_on_disk">0</boolean>
+  <boolean id="donotask_close_deleted_files">0</boolean>
+  <boolean id="donotask_dragdrop_uri">0</boolean>
+  <boolean id="donotask_reload_changed_files">0</boolean>
+  <boolean id="donotask_revert_buffer">0</boolean>
+  <boolean id="donotask_treat_large_documents_as_text">0</boolean>
+  <boolean id="editEnableMouseZoom">1</boolean>
+  <boolean id="editShowMinimap">0</boolean>
+  <long id="indentWidth">2</long>
+  <string id="jshint_linter_chooser">default</string>
+  <string id="jslint_linter_chooser">default</string>
+  <string id="language">PHP</string>
+  <string id="lastInvocation">Project</string>
+  <string id="lastTestPlanName_pref">New test plan #1</string>
+  <string id="lessDefaultInterpreter">None</string>
+  <long id="prefs_version">1</long>
+  <string id="sassDefaultInterpreter">None</string>
+  <boolean id="scrollEndAtLastLine">0</boolean>
+  <long id="scrollWidth">2000</long>
+  <boolean id="scrollWidthTracking">0</boolean>
+  <string id="scssDefaultInterpreter">None</string>
+  <boolean id="select_most_recent_buffer_on_buffer_close">0</boolean>
+  <boolean id="showEOL">0</boolean>
+  <boolean id="showLineNumbers">1</boolean>
+  <boolean id="showWhitespace">1</boolean>
+  <long id="tabWidth">2</long>
+<preference-set id="testPlans">
+<preference-set id="New test plan #1">
+  <string id="command_line"></string>
+  <string id="directory">file:///home/fanningert/</string>
+  <string id="language">Perl - TAP (*.t)</string>
+</preference-set>
+</preference-set>
+  <boolean id="useTabs">0</boolean>
+  <long id="ySlop">5</long>
 </preference-set>
 </project>
